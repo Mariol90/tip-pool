@@ -12,9 +12,24 @@ describe("Servers test (with setup and tear-down)", function() {
   });
 
   afterEach(function() {
-    // teardown logic
+    serverTbody.innerHTML = '';
+    allServers={};
+    
   });
 });
-// afterEach(function(){
-//   serverNameInput.value="";
-// })
+describe("2do function test",function(){
+it('should Create table row element and pass to Name and a value of 0', function(){
+  updateServerTable()
+  allServers.server1 = { serverName: 'Mario'};
+  allServers.server2 = { serverName: 'Eric' };
+  updateServerTable()
+  expect(serverTbody.innerHTML).toContain('Mario')
+  expect(serverTbody.innerHTML).toContain('Eric')
+})
+
+afterEach(function() {
+  serverTbody.innerHTML = '';
+  allServers={};
+  
+});
+});
