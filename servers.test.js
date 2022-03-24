@@ -17,7 +17,7 @@ describe("Servers test (with setup and tear-down)", function() {
     
   });
 });
-describe("2do function test",function(){
+describe("2do function test in servers",function(){
 it('should Create table row element and pass to Name and a value of 0', function(){
   updateServerTable()
   allServers.server1 = { serverName: 'Mario'};

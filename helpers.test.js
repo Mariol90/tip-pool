@@ -1,4 +1,4 @@
-describe('test 1er funcion',function(){
+describe('test 1er funcion in helpers',function(){
     beforeEach(function(){
         allPayments.payment1 = {
             billAmt: 100,
@@ -29,8 +29,8 @@ afterEach(function(){
 });
 
 
-describe("test 2do function", function(){
-    it("should calculate 100totalbill and 20tips",function(){
+describe("test 2do function in helpers", function(){
+    it("should calculate tipPercent of 100 and 20",function(){
     expect(calculateTipPercent(100,20)).toEqual(20);
     });
 });
